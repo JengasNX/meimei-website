@@ -15,11 +15,19 @@
 
 ```bash
 npm install
-npm run dev      # разработка
-npm run build    # прод-сборка
-npm run start    # прод-сервер
-npm run lint     # ESLint
+npm run dev          # разработка
+npm run build        # прод-сборка
+npm run start        # прод-сервер
+npm run lint         # ESLint
+npm run build:pages  # статический экспорт для GitHub Pages (out/)
 ```
+
+## Публикация
+
+Сайт автоматически деплоится на GitHub Pages при пуше в `main`
+(см. `.github/workflows/deploy.yml`):
+
+**https://jengasnx.github.io/meimei-website/**
 
 ## Структура
 

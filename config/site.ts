@@ -11,8 +11,12 @@ export const site = {
   tagline: "Шерсть на крови",
   description:
     "Официальный сайт Roblox-игры «Слово Меймея. Шерсть на крови» — тайкун, симулятор и эволюция в одном проекте. Развивай базу, прокачивай Меймей, зарабатывай и открывай новые территории.",
-  /** Домен сайта для SEO (можно переопределить через NEXT_PUBLIC_SITE_URL). */
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://meimei-website.example.com",
+  /**
+   * Публичный адрес сайта. По умолчанию — GitHub Pages.
+   * Можно переопределить через NEXT_PUBLIC_SITE_URL (например, при переходе
+   * на собственный домен).
+   */
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://jengasnx.github.io/meimei-website",
 } as const;
 
 export const links = {

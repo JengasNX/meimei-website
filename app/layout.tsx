@@ -43,7 +43,8 @@ export const metadata: Metadata = {
     description: site.description,
     images: [
       {
-        url: "/images/meimei/meimei-main.webp",
+        // Относительный путь — резолвится от metadataBase (учитывает basePath Pages)
+        url: "images/meimei/meimei-main.webp",
         width: 1180,
         height: 1248,
         alt: "Меймей — главный герой игры «Слово Меймея. Шерсть на крови»",
