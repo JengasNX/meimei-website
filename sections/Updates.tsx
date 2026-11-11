@@ -2,6 +2,7 @@ import { Newspaper } from "lucide-react";
 import { Reveal } from "@/components/motion";
 import { SectionHeading, SectionShell } from "@/components/SectionShell";
 import { updates, type UpdatePost } from "@/data/updates";
+import { asset } from "@/lib/paths";
 
 const categoryTone = {
   Обновление: "border-accent/35 bg-accent/10 text-accent-soft",
@@ -19,7 +20,7 @@ function NewsCard({ post }: { post: UpdatePost }) {
     <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-white/8 bg-surface/55 transition-all duration-300 hover:-translate-y-1.5 hover:border-accent/35 hover:shadow-[0_20px_60px_rgba(0,0,0,0.45)]">
       <div className="relative aspect-[16/9] overflow-hidden bg-surface/30">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={post.cover} alt={post.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+        <img src={asset(post.cover)} alt={post.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
         <div className="absolute inset-x-0 bottom-0 h-14 bg-gradient-to-t from-surface/90 to-transparent" aria-hidden="true" />
       </div>
       <div className="flex flex-1 flex-col p-5">

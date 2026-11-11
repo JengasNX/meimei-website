@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { asset } from "@/lib/paths";
 
 type Props = {
   src?: string; // путь к аватарке (если файла нет — покажутся инициалы)
@@ -30,7 +31,7 @@ export function MemberAvatar({ src, alt, initials, className = "" }: Props) {
   return (
     <span className={`relative overflow-hidden rounded-2xl border border-white/10 ${className}`}>
       <Image
-        src={src}
+        src={asset(src)}
         alt={alt}
         fill
         sizes="64px"

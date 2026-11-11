@@ -5,6 +5,7 @@ import { ParticleField } from "@/components/ParticleField";
 import { SloganRotator } from "@/components/SloganRotator";
 import { heroStats } from "@/data/features";
 import { links } from "@/config/site";
+import { asset } from "@/lib/paths";
 
 const playHref = links.roblox || "#community";
 
@@ -101,7 +102,7 @@ export function Hero() {
 
             <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-surface/40 shadow-[0_40px_120px_rgba(0,0,0,0.55)]">
               <Image
-                src="/images/meimei/meimei-main.webp"
+                src={asset("/images/meimei/meimei-main.webp")}
                 alt="Меймей — главный герой игры: серо-белая шерсть, чёрные полосы и огромные глаза"
                 width={1180}
                 height={1248}

@@ -3,6 +3,7 @@ import { Lock } from "lucide-react";
 import { Reveal } from "@/components/motion";
 import { DemoBadge, SectionHeading, SectionShell } from "@/components/SectionShell";
 import { evolutionForms } from "@/data/evolutions";
+import { asset } from "@/lib/paths";
 
 const rarityStyles = {
   steel: "border-mist/30 bg-mist/10 text-mist",
@@ -53,7 +54,7 @@ export function Evolution() {
                   {form.image ? (
                     <>
                       <Image
-                        src={form.image}
+                        src={asset(form.image)}
                         alt={form.imageAlt ?? form.name}
                         width={form.id === "base" ? 1180 : form.id === "duo" ? 1179 : 1180}
                         height={form.id === "base" ? 1248 : form.id === "duo" ? 819 : 1124}

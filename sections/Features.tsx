@@ -3,6 +3,7 @@ import { GameIcon } from "@/components/GameIcon";
 import { Reveal } from "@/components/motion";
 import { SectionHeading, SectionShell } from "@/components/SectionShell";
 import { features } from "@/data/features";
+import { asset } from "@/lib/paths";
 
 export function Features() {
   return (
@@ -25,7 +26,7 @@ export function Features() {
             />
             <div className="relative overflow-hidden rounded-[1.75rem] border border-white/10">
               <Image
-                src="/images/meimei/meimei-evolution-green.webp"
+                src={asset("/images/meimei/meimei-evolution-green.webp")}
                 alt="Меймей в особой неоновой форме — концепт эволюции"
                 width={1180}
                 height={1124}

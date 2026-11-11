@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Building2, Dna, Infinity as InfinityIcon, Swords } from "lucide-react";
 import { Reveal } from "@/components/motion";
 import { SectionHeading, SectionShell } from "@/components/SectionShell";
+import { asset } from "@/lib/paths";
 
 const pillars = [
   {
@@ -38,7 +39,7 @@ export function About() {
           />
           <div className="relative overflow-hidden rounded-[1.75rem] border border-white/10 bg-surface/40">
             <Image
-              src="/images/meimei/meimei-duo.webp"
+              src={asset("/images/meimei/meimei-duo.webp")}
               alt="Два Меймей — дуо-концепт совместной игры"
               width={1179}
               height={819}
