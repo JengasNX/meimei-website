@@ -15,7 +15,7 @@ export function Team() {
               Люди, которые растят <span className="text-gradient">шерстяную империю</span>
             </>
           }
-          description="Команда проекта будет пополняться — новые участники добавляются по решению основателя."
+          description="Команда проекта будет пополняться — новые участники добавляются по решению владельца."
         />
       </div>
 
@@ -54,7 +54,7 @@ export function Team() {
                 )}
                 {member.founder && (
                   <span className="rounded-full border border-neon/30 bg-neon/10 px-2.5 py-1 text-[10px] font-bold tracking-wider text-neon uppercase">
-                    Основатель
+                    Владелец
                   </span>
                 )}
               </div>
